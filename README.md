@@ -31,3 +31,47 @@ For easy viewing of the effects, the demo transformers work like this
   * reverseTransform: append V
   * transform: append v
 
+Test output:
+```
+There were 2 failures:                                                                                                                    [30/9990]
+
+1) AppBundle\Tests\Form\Types\TEMpFilterTypeTest::testSubmitInForm
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'd' => Array (...)
+     'n' => Array (
+-        'txt' => 'zwejV'
++        'txt' => 'zwejVM'
+     )
+     'v' => Array (
+-        'txt' => 'zwejVv'
++        'txt' => 'zwejVM'
+     )
+ )
+
+.../src/AppBundle/Tests/Form/Type/TEMpTestFilterType.php:80
+
+2) AppBundle\Tests\Form\Types\TEMpFilterTypeTest::testDataInForm
+Failed asserting that two arrays are equal.                                                                                                [8/9990]
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'd' => Array (...)
+     'n' => Array (
+-        'tsd' => 'eolwm'
++        'tsd' => 'eolw'
+     )
+     'v' => Array (
+-        'tsd' => 'eolwmv'
++        'tsd' => 'eolw'
+     )
+ )
+
+.../src/AppBundle/Tests/Form/Type/TEMpTestFilterType.php:105
+
+FAILURES!
+Tests: 4, Assertions: 8, Failures: 2.
